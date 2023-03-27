@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blah.Pages.SetingsPage"
+             Title="">
+    <VerticalStackLayout x:Name="layoutSettings" VerticalOptions="Center" HorizontalOptions="Center">
+        <Label 
+            Text="What's your favorite color? "
+            x:Name="lblTitle"
+            FontSize="30"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <VerticalStackLayout>
+            <RadioButton Content="Red"   x:Name="rdoSelectRed"   CheckedChanged="ChangeColor"/>
+            <RadioButton Content="Blue"  x:Name="rdoSelectBlue"  CheckedChanged="ChangeColor"/>
+            <RadioButton Content="Green" x:Name="rdoSelectGreen" CheckedChanged="ChangeColor"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

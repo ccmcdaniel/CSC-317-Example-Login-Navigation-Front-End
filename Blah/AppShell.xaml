@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Blah.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Blah"
+    xmlns:pages="clr-namespace:Blah.Pages"
+    Shell.FlyoutBehavior="Disabled"
+    >
+
+    <!--Display a TabBar to the user.
+        Note: You MUST setup the ShellContent link for this to run without
+                issue.
+    -->
+
+    <TabBar>
+        <Tab Title="Home">
+            <ShellContent ContentTemplate="{DataTemplate pages:HomePage}" />
+        </Tab>
+        <Tab Title="About Us">
+            <ShellContent ContentTemplate="{DataTemplate pages:AboutUsPage}" />
+        </Tab>
+        <Tab Title="Settings">
+            <ShellContent ContentTemplate="{DataTemplate pages:SetingsPage}" />
+        </Tab>
+    </TabBar>
+
+</Shell>
